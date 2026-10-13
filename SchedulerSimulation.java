@@ -150,6 +150,7 @@ class Process implements Runnable {
 }
 
 public class SchedulerSimulation {
+    private static int contextSwitchCount = 0; // Counter for the number of context switches
     public static void main(String[] args) {
         // ⚠️ IMPORTANT: Put your student ID here to seed the random number generator
         // This makes your output unique to you - DO NOT forget to change this!
@@ -222,7 +223,7 @@ public class SchedulerSimulation {
         System.out.println(Colors.BOLD + Colors.GREEN + 
                           "╚════════════════════════════════════════════════════════════════════════════════╝" + 
                           Colors.RESET + "\n");
-        
+        contextSwitchCount = 0; // Initialize the context switch counter
         // Loop to manage the scheduling of processes
         while (!processQueue.isEmpty()) {
             // Get the next thread from the queue (FIFO)
@@ -244,6 +245,8 @@ public class SchedulerSimulation {
             System.out.println(Colors.BRIGHT_WHITE + "]" + Colors.RESET);
             System.out.println(Colors.BOLD + Colors.MAGENTA + "└" + "─".repeat(79) + Colors.RESET + "\n");
             
+            contextSwitchCount++; // Increment the context switch counter
+
             // Start the thread, which will run the process for one time quantum
             currentThread.start();
             
@@ -284,7 +287,9 @@ public class SchedulerSimulation {
         System.out.println(Colors.BOLD + Colors.BRIGHT_GREEN + 
                           "╚════════════════════════════════════════════════════════════════════════════════╝" + 
                           Colors.RESET + "\n");
-    }
+    
+        System.out.println(Colors.BOLD + Colors.BRIGHT_CYAN + "Total context switches: " + contextSwitchCount + Colors.RESET + "\n"); // Print the total number of context switches that occurred during the simulation
+        }
     
     // Method to add a process to the queue and map, while printing a "ready" message
     public static void addProcessToQueue(Process process, Queue<Thread> processQueue, 
