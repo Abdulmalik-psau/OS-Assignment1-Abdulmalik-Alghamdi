@@ -34,7 +34,7 @@ class Process implements Runnable {
     private int priority; // Priority of the process
     private long creationTime; // Timestamp when the process was created (for potential future use)
     private long readyQueueEntryTime; // Timestamp when the process entered the ready queue (for potential future use)
-    private long wiatingTime; // Total time the process has spent waiting in the ready queue (for potential future use)
+    private long waitingTime; // Total time the process has spent waiting in the ready queue (for potential future use)
 
 
     // Constructor to initialize the process with name, burst time, and time quantum
@@ -47,7 +47,7 @@ class Process implements Runnable {
 
         this.creationTime = System.currentTimeMillis(); // Record the creation time of the process
         this.readyQueueEntryTime = creationTime; // Initialize ready queue entry time to the creation time
-        this.wiatingTime = 0; // Initialize waiting time to zero
+        this.waitingTime = 0; // Initialize waiting time to zero
     }
 
     // This method will be called when the thread for this process is started
@@ -153,7 +153,7 @@ class Process implements Runnable {
         return priority;
     }
 
-    // Check if the process has finished (i.e., no remaining time)
+   
     public boolean isFinished() {
         return remainingTime <= 0;
     }
@@ -163,15 +163,15 @@ class Process implements Runnable {
     }
 
     public void recordWaitingTime() {
-        this.wiatingTime += (System.currentTimeMillis() - readyQueueEntryTime); // Update the total waiting time by adding the time spent in the ready queue
+        this.waitingTime += (System.currentTimeMillis() - readyQueueEntryTime); // Update the total waiting time by adding the time spent in the ready queue
     }
 
     public long getWaitingTime() {
-        return wiatingTime;  // Return the total waiting time of the process
+        return waitingTime;  // Return the total waiting time of the process
     }
 
     public long getTurnaroundTime() {
-        return (System.currentTimeMillis() - creationTime); // Calculate and return the turnaround time (total time from creation to completion)
+         return waitingTime + burstTime; 
     }
 
 

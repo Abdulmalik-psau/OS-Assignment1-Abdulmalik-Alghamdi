@@ -29,17 +29,17 @@
 
 | Field | Your Answer |
 |-------|-------------|
-| **Full Name** | [Write your full name here] |
-| **Student ID** | [Write your student ID here] |
-| **University Email** | [yourid]@std.psau.edu.sa |
-| **GitHub Username** | [your-github-username] |
-| **Repository Link** | [Paste your repository link here] |
+| **Full Name** | [ِAbdulmalik Ahmed Alghamdi] |
+| **Student ID** | [446050342] |
+| **University Email** | [446050342]@std.psau.edu.sa |
+| **GitHub Username** | [Abdulmalik-psau] |
+| **Repository Link** | [https://github.com/Abdulmalik-psau/OS-Assignment1-Abdulmalik-Alghamdi] |
  
 ---
 
 ## 🎥 Video Link
 
-**Video Link**: [Paste your video link here]
+**Video Link**: [(https://drive.google.com/drive/folders/1RnEkPq9yns8PNbMvrbFuNh9Y4a_ghPDt?usp=drive_link)]
 
 > ⚠️ **WARNING:** The video must be **publicly accessible** ("Anyone with the link can view") on **Google Drive**, **YouTube (Unlisted or Public)** or any other cloud file-sharing system. A private, restricted or broken link counts as a **missing video (-1 mark)**.
 >
@@ -129,68 +129,93 @@
 
 ## Your Development Log
 
-### Entry 1 - [Date and Time]
-**What I did**:
+### Entry 1 - [12/10/2026, 7:30 PM]
+**What I did**: Created a GitHub account and installed VS Code
 
 **Details**:
+- Created my GitHub account.
+- Downloaded and installed VS Code.
+- Learned how to open a project and edit files.
+- Learned how commits save changes and how pushing sends them to GitHub.
 
-**Challenges**:
+**Challenges**: I was new to GitHub and VS Code, so I had difficulty understanding how to use them and upload my changes.
 
-**Solution**:
+**Solution**: I followed the assignment instructions and practised using both tools until I understood the basic steps.
 
-**Time spent**:
+**Time spent**: 1 Hour
 
 ---
 
-### Entry 2 - [Date and Time]
-**What I did**:
+### Entry 2 - [12/10/2026, 10:30 PM]
+**What I did**: Ran the starter program and reviewed the assignment requirements
 
 **Details**:
+- Read the README to understand the required features.
+- Opened SchedulerSimulation.java and reviewed the code.
+- Ran the program and watched the output.
+- Learned how processes enter the ready queue and take turns running.
+- Reviewed what Thread.start(), Thread.join(), and Thread.sleep() do.
 
-**Challenges**:
+**Challenges**:I found it difficult at first to follow how an unfinished process returns to the ready queue.
 
-**Solution**:
 
-**Time spent**:
+**Solution**: I followed the execution messages and compared them with the scheduler loop to understand the process order
+
+**Time spent**: 1:30H
 
 ---
 
-### Entry 3 - [Date and Time]
-**What I did**:
+### Entry 3 - [12/10/2026, 11:30 PM]
+**What I did**: Added Feature 1: process priority
 
 **Details**:
+- Added a priority field to the Process class.
+- Added getPriority() to return its value.
+- Generated random priorities from 1 to 10.
+- Ran the program and confirmed that execut.
+- Committed and pushed: Feature 1 - Add Process Priority.
 
-**Challenges**:
+**Challenges**: When I ran the program, some characters appeared as strange symbols in the output
 
-**Solution**:
+**Solution**: I changed the encoding to UTF-8 in the settings so the characters displayed correctly
 
-**Time spent**:
+**Time spent**: 1:45H
 
 ---
 
-### Entry 4 - [Date and Time]
-**What I did**:
+### Entry 4 - [13/10/2026, 2;30 PM]
+**What I did**: Added Feature 2: context switch counting
 
 **Details**:
+- Added a static variable called contextSwitchCount.
+- Increased the counter before each currentThread.start().
+- Displayed the total at the end of the simulation.
+- Ran the program and checked the result: 19 context switches.
+- Committed and pushed: Feature 2: Implemented context switch counter
 
-**Challenges**:
+**Challenges**: No challenges
 
-**Solution**:
+**Solution**: 
 
-**Time spent**:
+**Time spent**: 1H
 
 ---
 
-### Entry 5 - [Date and Time]
-**What I did**:
+### Entry 5 - [14/10/2026, 6:45]
+**What I did**: Completed the development log and answered the questions in MY_WORK.md.
 
 **Details**:
+- Wrote the development log entries about my work.
+- Described the challenges I faced and how I solved them.
+- Answered the reflection questions about my learning experience.
+- Answered the technical questions using examples from my code and output.
+- Reviewed my answers to make sure I understood them.
 
 **Challenges**:
 
 **Solution**:
 
-**Time spent**:
+**Time spent**: 1:30H
 
 ---
 
@@ -211,13 +236,13 @@
 
 > 💡 **TIP:** Fill this in **last**, after all entries are written.
 
-**Total time spent on assignment**: [X hours]
+**Total time spent on assignment**: [7:30 hours]
 
-**Most challenging part**:
+**Most challenging part**: Learn to use VS code
 
-**Most interesting learning**:
+**Most interesting learning**: How cpu and thearding work
 
-**What I would do differently next time**:
+**What I would do differently next time**: Start Early.
 
 ---
 
@@ -237,7 +262,7 @@
 
 **Your Answer:** *(5-7 sentences)*
 
-[Write your answer here.]
+[I learned how to create Java threads. Runnable defines the task. start() starts the thread. join() makes the main thread wait for it to finish. sleep() simulates execution time.]
 
 ## Question 2: What was the most challenging part of this assignment?
 
@@ -245,7 +270,7 @@
 
 **Your Answer:** *(5-7 sentences)*
 
-[Write your answer here.]
+[The hardest part was learning to use GitHub. It was new to me. I did not understand commits at first. I was unsure how to upload my changes. The different steps were confusing in the beginning.]
 
 ## Question 3: How did you overcome the challenges you faced?
 
@@ -253,7 +278,7 @@
 
 **Your Answer:** *(5-7 sentences)*
 
-[Write your answer here.]
+[I used AI to help me understand the instructions. I asked it to explain confusing parts of the code. I practised using GitHub and VS Code. I tested the program after each change. I reviewed the explanations to understand the fixes.]
 
 ## Question 4: How can you apply multithreading concepts in real-world applications?
 
@@ -261,7 +286,7 @@
 
 **Your Answer:** *(5-7 sentences)*
 
-[Write your answer here.]
+[Multithreading helps apps handle several tasks. A browser can load pages while responding to clicks. A mobile app can download files while I use it. A game can run background tasks while updating the screen. Like the processes in my simulation, these tasks share CPU time.]
 
 ### Optional: What would you like to learn more about?
 
@@ -293,7 +318,7 @@
 
 **Your Answer:** *(3-5 sentences)*
 
-[Write your answer here.]
+[Processes have separate memory, while threads share memory within a process. We used threads because they are cheaper to create. In addProcessToQueue(), new Thread(process) runs our simulated Process as a Java thread.]
 
 ## Question 2: Ready Queue Behavior
 
@@ -305,15 +330,24 @@
 
 **Your Answer:** *(3-5 sentences)*
 
-[Write your answer here.]
+[An unfinished process returns to the end of the ready queue. In my output, P9 had a burst time of 4663ms and was re-queued twice with a 2000ms time quantum. This gives other processes a turn and keeps scheduling fair.]
 
 Example from my output:
-```
-[Paste a relevant snippet from your program output here showing a process being re-queued]
-```
+  ▶ P9 executing quantum [2000ms]
+     Remaining time: 2663ms
+  ➕ P9 (Priority: 7) added to ready queue │ Burst time: 4663ms
 
+  ▶ P9 executing quantum [2000ms]
+     Remaining time: 663ms
+  ➕ P9 (Priority: 7) added to ready queue │ Burst time: 4663ms
+
+  ▶ P9 executing quantum [663ms]
+  ✓ P9 finished execution!
+```
+[]
+```
 **Explanation of example:**
-[Explain what is happening in the output snippet you pasted.]
+[P9 returned to the ready queue after each of its first two turns. It then ran for the remaining 663ms and finished..]
 
 ## Question 3: Thread Lifecycle
 
@@ -323,15 +357,15 @@ Example from my output:
 
 **Your Answer:** *(3-5 sentences overall; one short explanation per state)*
 
-1. **New**: [When is P1 in the New state?]
+1. **New**: [New: P1’s thread is created by new Thread(process) in addProcessToQueue()]
 
-2. **Runnable**: [When does P1 become Runnable?]
+2. **Runnable**: [currentThread.start() makes P1’s thread ready to run]
 
-3. **Running**: [When is P1 Running?]
+3. **Running**: [P1 executes run() when it gets CPU time, within Java’s RUNNABLE state]
 
-4. **Waiting**: [When and why would a thread be Waiting?]
+4. **Waiting**: [The main thread waits using join(), while P1 enters TIMED_WAITING during Thread.sleep()]
 
-5. **Terminated**: [When is P1 Terminated?]
+5. **Terminated**: [P1’s thread ends when run() returns, even if the process needs another quantum]
 
 ## Question 4: Real-World Applications
 
@@ -344,29 +378,29 @@ Example from my output:
 ### Example 1 (operating-system level): [Name of scenario]
 
 **Description**:
-[Describe the real-world scenario.]
+[An OS can use Round-Robin to share CPU time among ready threads of equal priority. Like our simulation, each thread gets a time quantum before a context switch gives another thread a turn.]
 
 **Why Round-Robin works well here**:
-[Fairness, responsiveness, predictability?]
+[It gives threads fair CPU access and keeps programs responsive]
 
 ### Example 2: [Name of application/scenario]
 
 **Description**:
-[Describe the real-world scenario or application.]
+[A compression app can use worker threads to compress different files. Each worker acts like a process in our simulation, receiving a time quantum before switching to another worker..]
 
 **Why Round-Robin works well here**:
-[Fairness, responsiveness, predictability?]
+[This prevents one large file from taking all the CPU time while other files wait]
 
 ## Summary
 
 **Key concepts I understood through these questions:**
-1.
-2.
-3.
+1.Threads and processes.
+2.Round-Robin scheduling.
+3.Thread lifecycle.
 
 **Concepts I need to study more:**
-1.
-2.
+1.Thread synchronization.
+2.Other scheduling algorithms.
 
 ---
 
@@ -375,29 +409,29 @@ Example from my output:
 > ⚠️ **WARNING:** Go through every line. Late submission costs **-1 mark per day**, and the deadline is **October 10, 2026**.
 
 **Repository**
-- [ ] Repository is **PUBLIC** (Settings → Danger Zone → Visibility)
-- [ ] Repository is renamed to `OS-Assignment1-YourFirstName-YourLastName`
-- [ ] GitHub account uses the university email (`@std.psau.edu.sa`)
+- [✅ ] Repository is **PUBLIC** (Settings → Danger Zone → Visibility)
+- [✅] Repository is renamed to `OS-Assignment1-YourFirstName-YourLastName`
+- [✅ ] GitHub account uses the university email (`@std.psau.edu.sa`)
 
 **Code**
-- [ ] Student ID is set in `SchedulerSimulation.java` (line 150)
-- [ ] Code compiles and runs with no errors
-- [ ] Feature 1 (priority), Feature 2 (context switches) and Feature 3 (waiting time table) all work
-- [ ] Each feature has clear comments
+- [✅] Student ID is set in `SchedulerSimulation.java` (line 150)
+- [✅] Code compiles and runs with no errors
+- [✅] Feature 1 (priority), Feature 2 (context switches) and Feature 3 (waiting time table) all work
+- [✅] Each feature has clear comments
 
 **Commits**
-- [ ] **At least 3 meaningful commits, ideally 6 or more**
-- [ ] **One commit per feature**
-- [ ] Commits are spread over **different dates** (not all in the last hour)
+- [✅] **At least 3 meaningful commits, ideally 6 or more**
+- [✅] **One commit per feature**
+- [✅] Commits are spread over **different dates** (not all in the last hour)
 - [ ] Everything is **pushed** to GitHub
 
 **This file (`MY_WORK.md`)**
-- [ ] Full name and student ID filled in at the top
-- [ ] Development log has **5+ entries** on different dates
-- [ ] Reflection: 4 questions, 5-7 sentences each
-- [ ] Technical answers: 4 questions, 3-5 sentences each, with examples from **your** output
-- [ ] No `[...]` placeholders left
-- [ ] No section headers deleted
+- [✅] Full name and student ID filled in at the top
+- [✅] Development log has **5+ entries** on different dates
+- [✅] Reflection: 4 questions, 5-7 sentences each
+- [✅] Technical answers: 4 questions, 3-5 sentences each, with examples from **your** output
+- [✅] No `[...]` placeholders left
+- [✅] No section headers deleted
 
 **Video**
 - [ ] 2-3 minutes long, named `StudentID_Assignment1_Demo.mp4`
